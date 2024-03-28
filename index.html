@@ -1,0 +1,52 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{{ site.author }} / {{ site.tagline }}</title>
+	<meta name="author" content="{{ site.author }}">
+	<meta name="description" content="{{ site.description }}">
+	<meta name="keywords" content="{{ site.keywords }}">
+	{% include head.html %}
+</head>
+<body style="background-color: #EDEADE;">
+	{% include header.html %}
+	<main class="content" style="background-color: #EDEADE;">
+		<section class="projects">
+			<div class="container">
+				<h1>My Projects<br><br></h1>
+				<ul class="projects-list">
+					{% for item in site.categories.projects reversed %}
+						<li>
+							<a href="{{ item.url | prepend: site.baseurl }}">
+								<div class="img-wrapper">
+									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+								</div>
+								<span class="h5">{{ item.project.tech }}</span>
+								<h3>{{ item.project.title }}</h3>
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</section>
+		
+		<!-- <section class="intro">
+			<div class="container">
+				<h1><br><br><br><br><br><br>About me!</h1>
+				<p class="body">{{ site.description }}</p>
+			</div>
+		</section> -->
+		<section class="intro">
+			<div class="container">
+				<!-- <h2>About me!</h2> -->
+				<p class="semibold"><br><br><br>About me!</p>
+				<h5>{{ site.description }}</h5>
+			</div>
+		</section>
+	</main>
+	{% include footer.html %}
+	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
+</body>
+</html>

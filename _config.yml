@@ -1,0 +1,17 @@
+# User config
+author: "Divyam Bansal"
+tagline: "Divyam Bansal's Portfolio"
+description: "Hello! I'm Divyam Bansal, a software developer and data scientist driven by my passion for unraveling the complexities of real-world challenges. My journey in tech has been fueled by curiosity and the desire to make impactful contributions. Working within dynamic teams, I've found my true calling—leveraging collaborative strengths to innovate and solve problems at scale. My toolkit is a blend of coding prowess and analytical insight, enabling me to turn data into decisions and ideas into reality. Welcome to my portfolio, where each project is a testament to my dedication to excellence and my journey in making a difference."
+keywords: "Keywords"
+email: "divyambansal2025@u.northwestern.edu"
+resume: "https://drive.google.com/file/d/1ZBMvAREeeXlM7BwB07gP0e9bJUddfj-b/view?usp=sharing"
+linkedin: "https://www.linkedin.com/in/divyam-bansal/"
+github: "https://github.com/divyamb08"
+
+
+# Site config
+baseurl: ""
+highlighter: rouge
+sass:
+  sass_dir: assets/scss
+  style: compressed
